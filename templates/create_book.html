@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-2xl font-bold mb-6">Add a New Book</h1>
+
+<form method="POST" class="space-y-4 max-w-lg">
+  <!-- Book Title -->
+  <input type="text" name="title" placeholder="Book Title" required class="w-full p-3 border rounded-lg">
+
+  <!-- Author -->
+  <input type="text" name="author" placeholder="Author" required class="w-full p-3 border rounded-lg">
+
+  <!-- Description -->
+  <textarea name="description" placeholder="Description" required class="w-full p-3 border rounded-lg"></textarea>
+
+  <!-- Price -->
+  <input type="text" 
+         name="price" 
+         placeholder="Price" 
+         required 
+         pattern="^\d+(\.\d{1,2})?$" 
+         title="Enter a valid number, e.g., 299.99"
+         inputmode="decimal"
+         class="w-full p-3 border rounded-lg">
+
+  <!-- Submit Button -->
+  <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Add Book</button>
+</form>
+{% endblock %}

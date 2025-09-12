@@ -1,0 +1,32 @@
+# VS Code settings
+.vscode/
+
+# Python cache / compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and temp files
+*.log
+*.pot
+*.tmp
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS / Windows system files
+.DS_Store
+Thumbs.db
